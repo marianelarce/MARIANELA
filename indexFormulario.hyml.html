@@ -1,0 +1,145 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href=Pets.css />
+ <title> Validaciones con Javascript </title>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+ <link rel="stylesheet" href="Pets.css">
+ <script type="text/Javascript" src="js/jquery.js"></script>.
+    
+    </head>
+    <body>
+    
+<ul class="navbar">
+
+  <li> <a href="indexFormulario.hyml.html"> FORMULARIO</a></li>
+   <li> <a href="ALIMENTO%20PERRO.htm"> ALIMENTO PARA PERROS</a></li>
+    <li> <a href="ALIMENTO%20GATO.htm"> ALIMENTO PARA GATOS </a> </li>
+    
+    
+</ul> 
+        <div class="img-fondo">
+        
+          <div class="velo-negro">
+              
+
+<!-------------------------------------------------------------------->
+              <!--ESTE ES LA CABECERA DE NUESTRO DOCUMENTO INDEX-->
+              <header class="header">
+                  <a href="NuevoPets.htm">
+                   <img src="CHARLY.jpg" alt="logo" class="logo-img">
+                  <div class="container">
+                  <h1> FORMULARIO DE REGISTRO</h1>
+                  <form action="registrar.php" method="post"
+                  class="form-register" >
+                    <h2 class="form-titulo">CREA UNA CUENTA </h2>
+                    <div class="contenedor-inputs">
+                        <input type="text" name="nombre"
+                        placeholder="Nombre" class="input-48">
+                        <input type="text" name="apellidos"
+                        placeholder="Apellidos" class="input-48">
+                        <input type="text" name="telefono"
+                        placeholder="Telefono" class="input-48">
+                        <input type="text" name="correo"
+                        placeholder="Correo" class="input-100">
+                        <input type="text" name="contraseña"
+                        placeholder="Contraseña" class="input-100">
+
+                    </div>
+                    
+                    <div class="seccion">
+                        <h4> Servicios</h4>
+                        <p><input type="checkbox" name = "Perros" value="Si"/> Alimento para Caninos</p>
+                        <p><input type="checkbox" name = "Perros" value="Si"/> Alimento para Felinos</p>
+                        <p><input type="checkbox" name = "Perros" value="Si"/> Petshop</p>
+                        <p><input type="checkbox" name = "Perros" value="Si"/> Peluqueria</p>
+                       
+                        </p>
+
+
+                    <input type="submit"  name="Registrar" class="btn-enviar">
+                    <p class="form-link"> ¿Ya tienes una cuenta? <a href="#"> Ingresa aqui</a></p>
+
+                   
+
+                    </div>
+                    
+            
+                  </form>
+                <script type="text/Javascript">
+                    function Validador8i9(email) {
+                        var tester = /^([a-zA-Z0-9_+-])+/@([a-zA-Z])\.$/;
+                        return tester.test(email);
+                    }
+                    function Validar() {
+                        var nombre = document.getElementById(´nombre´).value;
+                        var email = document.getElementById(´email´).value;
+                        var pass1 = document.getElementById(´pass1´).value;
+                        var pass2 = document.getElementById(´pass2´).value;
+                        if (nombre==){
+                            $(´#alert´).html(´Debes ingresar un nombre´).slideDown(500);
+                            $(´#nombre´).focus();
+                            return false;
+                        }
+                        else{
+                            $(´#alert´).html(´´).slideUp(300);
+                        }
+
+                        if (email==){
+                            $(´#alert´).html(´Debes ingresar un email´).slideDown(500);
+                            $(´#email´).focus();
+                            return false;
+                        }
+                        else{
+                            $(´#alert´).html(´´).slideUp(300);
+                        }
+
+                        
+                        if (Validador(email==false){
+                            $(´#alert´).html(´Ingresa un email valido´).slideDown(500);
+                            $(´#email´).focus();
+                            return false;
+                        }
+                        else{
+                            $(´#alert´).html(´´).slideUp(300);
+                        }
+
+                        
+                        if (pass1==){
+                            $(´#alert´).html(´Debes ingresar una contraseña´).slideDown(500);
+                            $(´#email´).focus();
+                            return false;
+                        }
+                        else{
+                            $(´#alert´).html(´´).slideUp(300);
+                        }
+
+                        
+                        if (pass2==){
+                            $(´#alert´).html(´Debes comprobar tu contraseña´).slideDown(500);
+                            $(´#email´).focus();
+                            return false;
+                        }
+                        else{
+                            $(´#alert´).html(´´).slideUp(300);
+                        }
+
+
+
+
+                
+
+
+
+                    }
+                </script>
+
+                  </div>
+                </div>
+            </body>
+</html>
+
+                  </a>
+              </header>
+               <!---FIN DEL HEADER-->
